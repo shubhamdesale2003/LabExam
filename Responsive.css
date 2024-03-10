@@ -1,0 +1,16 @@
+@media only screen and (max-width:600px){
+    
+    header{
+        height: 100vh;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .left,.right{
+         width: 100%;
+    }
+    
+}
