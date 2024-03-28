@@ -10,6 +10,7 @@ header{
     background-position:center;
     background-size:cover;
     position: relative;
+ 
     
 
 }
@@ -20,6 +21,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px dashed white;
+    animation: text 3s linear 0s ;
 }
 .logo h2{
     font-size: 2rem;
@@ -56,7 +58,9 @@ header{
     color: rgb(249, 254, 253);
     width: 100%;
     padding: 1rem;
-    margin-top: 5rem;
+    margin-top: 6.2rem;
+    animation: text 3s linear 0s ;
+    
 }
 .left,.right{
     width: 50%;
@@ -67,6 +71,7 @@ header{
     text-align: right;
     font-weight: 600;
     font-family: "Caveat", cursive;
+    animation: move 3s linear 0s ;
     
 }
 .left > p{
@@ -77,53 +82,96 @@ header{
 }
 .mail{
     margin-top: 1rem;
+    font-family: "Caveat", cursive;
 }
 .left>.mail> a{
     padding: 7px 25px;
     border: 1px solid whitesmoke;
     text-decoration: none;
     color: whitesmoke;
+    font-family: "Caveat", cursive;
 }
 h3{
     margin-top: 4rem;
-    color: rgb(153, 157, 160);
+    color: rgb(170, 177, 182);
+    font-size: 1.4rem;
     text-align: center;
+    font-family: "Caveat", cursive;
+    animation: shake 1s linear infinite;
+}
+@keyframes shake{
+    0%{
+        transform: translateY(-5px);
+
+    }
+    100%{
+        transform: translateY(5px);
+       
+    }
 }
 #tabs{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 4rem;
-    background-color: #282828;
+    margin-top: 4.5rem;
+    background-color: transparent;
     padding: 20px;
-    
+    font-family: "Caveat", cursive;  
+    animation: tabs 3s linear ;
+}
+@keyframes move{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+        filter: blur(10px);
+
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+@keyframes tabs{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0px);
+    }
 }
 .java{
     box-shadow: 0px 0px 2px #000;
-    background: #282828;
+    background: transparent;
     text-shadow: 0 0px 0px transparent, 0 0 1px #6cc3c8,0 0px 1px transparent, 0 0 0px #6cc3c8, 0 0 6px #6cc3c8;
 }
 .ai{
     box-shadow: 0px 0px 2px #000;
-    background: #282828;
+    background: transparent;
     text-shadow: 0 0px 0px transparent, 0 0 1px #6cc3c8,0 0px 1px transparent, 0 0 0px #6cc3c8, 0 0 6px #6cc3c8;
 }
 .ds{
     box-shadow: 0px 0px 2px #000;
-    background: #282828;
+    background:transparent;
     text-shadow: 0 0px 0px transparent, 0 0 1px #A1DA45,0 0px 1px transparent, 0 0 0px #A1DA45, 0 0 0 #A1DA45,0 0 5px #A1DA45,0 0 6px #A1DA45;
 }
 .tabs{
     color: aliceblue;
     padding: 5px 24px;
     border: 1px solid white;
+    font-family: "Caveat", cursive;
+
  
 }
 
 .content{
     padding: 15px;
     width: 100%;
-    background: #1d3632;
+    background: #090b0b;
     overflow: hidden;
     display: none;
     transition: all .4s;
@@ -138,6 +186,8 @@ footer{
     color: aliceblue;
     //background: linear-gradient(rgba(0,0,0,0.5),#009680);
     background:black;
+    font-family: "Caveat", cursive;
+
 
 }
 .nm, .ad, .home{
@@ -151,15 +201,21 @@ footer{
     font-size: 16px;
     font-weight: 600;
     color: rgb(223 216 216);
+    font-family: "Caveat", cursive;
+
 }
 .copy{
     position: absolute;
     bottom: 0;
-    left: 15%;
+    left: 20%;
     padding-bottom: 1rem;
+    font-family: "Caveat", cursive;
+
 
 }
 .home{
     color: aliceblue;
     text-decoration:none;
+    font-family: "Caveat", cursive;
+
 }
