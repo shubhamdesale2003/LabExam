@@ -154,7 +154,7 @@ h3{
     background: transparent;
     text-shadow: 0 0px 0px transparent, 0 0 1px #6cc3c8,0 0px 1px transparent, 0 0 0px #6cc3c8, 0 0 6px #6cc3c8;
 }
-.ds{
+.ds,.shell{
     box-shadow: 0px 0px 2px #000;
     background:transparent;
     text-shadow: 0 0px 0px transparent, 0 0 1px #A1DA45,0 0px 1px transparent, 0 0 0px #A1DA45, 0 0 0 #A1DA45,0 0 5px #A1DA45,0 0 6px #A1DA45;
